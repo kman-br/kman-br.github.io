@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kman-br.github.io/sitemap.xml

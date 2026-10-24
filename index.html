@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kman Apify Actors: Brazilian public data and web tools</title>
+  <meta name="description" content="Catalog of Kman Actors on the Apify Store: Brazilian public tenders, contracts, CNPJ, imports by NCM, diesel prices, Anatel, Anvisa, EU TED tenders and web tools. Pay per event.">
+  <link rel="canonical" href="https://kman-br.github.io/">
+  <link rel="alternate" hreflang="en" href="https://kman-br.github.io/">
+  <link rel="alternate" hreflang="pt-BR" href="https://kman-br.github.io/pt/">
+  <link rel="alternate" hreflang="x-default" href="https://kman-br.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kman">
+  <meta property="og:title" content="Kman Apify Actors: Brazilian public data and web tools">
+  <meta property="og:description" content="Catalog of Kman Actors on the Apify Store: Brazilian public tenders, contracts, CNPJ, imports by NCM, diesel prices, Anatel, Anvisa, EU TED tenders and web tools. Pay per event.">
+  <meta property="og:url" content="https://kman-br.github.io/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Public Tenders & Procurement (Licitações BR)",
+      "description": "Brazilian public tenders and procurement from the official PNCP portal. Filter by date, state, city, procurement type, keywords and agency CNPJ. Every record links to the official source.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/licitacoes-br",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/licitacoes-br"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Expiring Gov Contracts PNCP (Contratos a Vencer)",
+      "description": "Public contracts on PNCP whose term ends within a chosen window of days, with the current supplier (company CNPJ) and value. Filter by state, object, value, agency and supplier.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/contratos-a-vencer",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/contratos-a-vencer"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Framework Agreements PNCP (Atas para Carona)",
+      "description": "Active price registration agreements (Atas de Registro de Preço) on PNCP open to adhesion, with items, prices, suppliers, validity and an opportunity score. Weekly change tracking.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/atas-carona-pncp",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/atas-carona-pncp"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Public Tender Prices CATMAT/CATSER (Preço Público)",
+      "description": "Public purchase prices by CATMAT, CATSER or description from Compras.gov.br, cross-checked on PNCP. Price baskets with mean, median, lowest value and outliers, each price with its source link.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/preco-publico-comparavel",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/preco-publico-comparavel"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "EU TED Tenders Scraper (Licitações da UE)",
+      "description": "EU public procurement notices from the official TED Search API v3, normalized: English title, buyer, country, CPV, value, publication date, deadline and notice link.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/eu-ted-tenders",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/eu-ted-tenders"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Bankruptcy Auctions (Leilões de Falência)",
+      "description": "Auction notices in company bankruptcy and judicial recovery cases from the official CNJ DJEN/Comunica feed. Filter by court, date, asset category and value; each record links to the official source.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/leiloes-falencia",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/leiloes-falencia"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil CNPJ Bulk Lookup - Receita Federal (CNPJ em Lote)",
+      "description": "Bulk lookup of Brazilian company CNPJs in Receita Federal open data: status, legal nature, size, CNAE, Simples and city. Companies only; no partners, addresses or contacts.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/cnpj-lote",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/cnpj-lote"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Import/Export Data by NCM (Importação por NCM)",
+      "description": "Official Brazilian import and export statistics by NCM, month and country, state or route from the public Comex Stat API (MDIC): FOB, CIF, freight, insurance, net kg and US$/kg.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/importacao-ncm",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/importacao-ncm"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Diesel Fuel Prices ANP (Preço do Diesel)",
+      "description": "Weekly average, minimum and maximum diesel prices (S10/S500) from the official ANP survey, by state or city, with station count, weekly change and a link to the source spreadsheet.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/diesel-anp",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/diesel-anp"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Anatel Certified Products (Produtos Homologados)",
+      "description": "Search, new-entry tracking and bulk validation of Anatel certified (homologated) products from official open data, with source references.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/anatel",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/anatel"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Anvisa Drug Registrations (Radar ANVISA)",
+      "description": "Anvisa drug registrations from official data: snapshots, changes, upcoming expirations and competitor views, with source provenance.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/anvisa-radar-registros",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/anvisa-radar-registros"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Brazil Jobs Scraper: Greenhouse & Lever (Vagas BR)",
+      "description": "Job openings at Brazilian companies from the public Greenhouse and Lever job board APIs, with normalized city, state and work model, and filters by term, state, city and date.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/vagas-ats",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/vagas-ats"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "PDF to Text & Markdown Converter (PDF para Texto)",
+      "description": "Extracts the text layer of PDFs from public URLs and returns plain text, simple Markdown (headings by font size) and the page count. No OCR, no browser.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/pdf-to-text-markdown",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/pdf-to-text-markdown"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Website Health Checker: Broken Links & SEO (Saúde do Site)",
+      "description": "HTTP-only audit of a site you own: broken internal and external links, robots.txt, sitemap.xml, llms.txt, and per-page title, meta description, canonical, Open Graph, h1, lang and JSON-LD.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web (Apify platform)",
+      "url": "https://apify.com/kman-br/website-health-checker",
+      "offers": {
+        "@type": "Offer",
+        "description": "Pay-per-event pricing on the Apify Store; you pay only for results returned.",
+        "url": "https://apify.com/kman-br/website-health-checker"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kman"
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header>
+    <nav><span class="brand">Kman</span> <a href="pt/" hreflang="pt-BR">Português</a></nav>
+    <h1>Kman Actors</h1>
+    <p class="lead">Ready-to-run Apify Actors for official Brazilian public data, plus a few web utilities. Public, non-personal data only; every record points to its official source. You pay per result (pay-per-event), with no subscription.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Public procurement</h2>
+      <div class="grid">
+      <article class="card" id="licitacoes-br">
+        <h3><a href="https://apify.com/kman-br/licitacoes-br" rel="noopener">Brazil Public Tenders &amp; Procurement (Licitações BR)</a></h3>
+        <p>Brazilian public tenders and procurement from the official PNCP portal. Filter by date, state, city, procurement type, keywords and agency CNPJ. Every record links to the official source.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Lead generation</span><span class="tag">Business</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/licitacoes-br" rel="noopener">Open in Apify Store</a>
+        <!-- TODO: enable when the api.market listing is approved (currently In Review):
+        <a class="btn alt" href="https://api.market/store/kman/licitacoes-br" rel="noopener">api.market</a> -->
+      </article>
+      <article class="card" id="contratos-a-vencer">
+        <h3><a href="https://apify.com/kman-br/contratos-a-vencer" rel="noopener">Brazil Expiring Gov Contracts PNCP (Contratos a Vencer)</a></h3>
+        <p>Public contracts on PNCP whose term ends within a chosen window of days, with the current supplier (company CNPJ) and value. Filter by state, object, value, agency and supplier.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Business</span><span class="tag">Lead generation</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/contratos-a-vencer" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="atas-carona-pncp">
+        <h3><a href="https://apify.com/kman-br/atas-carona-pncp" rel="noopener">Brazil Framework Agreements PNCP (Atas para Carona)</a></h3>
+        <p>Active price registration agreements (Atas de Registro de Preço) on PNCP open to adhesion, with items, prices, suppliers, validity and an opportunity score. Weekly change tracking.</p>
+        
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/atas-carona-pncp" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="preco-publico-comparavel">
+        <h3><a href="https://apify.com/kman-br/preco-publico-comparavel" rel="noopener">Brazil Public Tender Prices CATMAT/CATSER (Preço Público)</a></h3>
+        <p>Public purchase prices by CATMAT, CATSER or description from Compras.gov.br, cross-checked on PNCP. Price baskets with mean, median, lowest value and outliers, each price with its source link.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Business</span><span class="tag">Lead generation</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/preco-publico-comparavel" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="eu-ted-tenders">
+        <h3><a href="https://apify.com/kman-br/eu-ted-tenders" rel="noopener">EU TED Tenders Scraper (Licitações da UE)</a></h3>
+        <p>EU public procurement notices from the official TED Search API v3, normalized: English title, buyer, country, CPV, value, publication date, deadline and notice link.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Business</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/eu-ted-tenders" rel="noopener">Open in Apify Store</a>
+      </article>
+      </div>
+    </section>
+    <section>
+      <h2>Companies and auctions</h2>
+      <div class="grid">
+      <article class="card" id="leiloes-falencia">
+        <h3><a href="https://apify.com/kman-br/leiloes-falencia" rel="noopener">Brazil Bankruptcy Auctions (Leilões de Falência)</a></h3>
+        <p>Auction notices in company bankruptcy and judicial recovery cases from the official CNJ DJEN/Comunica feed. Filter by court, date, asset category and value; each record links to the official source.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Lead generation</span><span class="tag">Other</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/leiloes-falencia" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="cnpj-lote">
+        <h3><a href="https://apify.com/kman-br/cnpj-lote" rel="noopener">Brazil CNPJ Bulk Lookup - Receita Federal (CNPJ em Lote)</a></h3>
+        <p>Bulk lookup of Brazilian company CNPJs in Receita Federal open data: status, legal nature, size, CNAE, Simples and city. Companies only; no partners, addresses or contacts.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Business</span><span class="tag">Developer tools</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/cnpj-lote" rel="noopener">Open in Apify Store</a>
+      </article>
+      </div>
+    </section>
+    <section>
+      <h2>Trade and prices</h2>
+      <div class="grid">
+      <article class="card" id="importacao-ncm">
+        <h3><a href="https://apify.com/kman-br/importacao-ncm" rel="noopener">Brazil Import/Export Data by NCM (Importação por NCM)</a></h3>
+        <p>Official Brazilian import and export statistics by NCM, month and country, state or route from the public Comex Stat API (MDIC): FOB, CIF, freight, insurance, net kg and US$/kg.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Business</span><span class="tag">Developer tools</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/importacao-ncm" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="diesel-anp">
+        <h3><a href="https://apify.com/kman-br/diesel-anp" rel="noopener">Brazil Diesel Fuel Prices ANP (Preço do Diesel)</a></h3>
+        <p>Weekly average, minimum and maximum diesel prices (S10/S500) from the official ANP survey, by state or city, with station count, weekly change and a link to the source spreadsheet.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Business</span><span class="tag">Developer tools</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/diesel-anp" rel="noopener">Open in Apify Store</a>
+      </article>
+      </div>
+    </section>
+    <section>
+      <h2>Regulatory data</h2>
+      <div class="grid">
+      <article class="card" id="anatel">
+        <h3><a href="https://apify.com/kman-br/anatel" rel="noopener">Brazil Anatel Certified Products (Produtos Homologados)</a></h3>
+        <p>Search, new-entry tracking and bulk validation of Anatel certified (homologated) products from official open data, with source references.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Business</span><span class="tag">Lead generation</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/anatel" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="anvisa-radar-registros">
+        <h3><a href="https://apify.com/kman-br/anvisa-radar-registros" rel="noopener">Brazil Anvisa Drug Registrations (Radar ANVISA)</a></h3>
+        <p>Anvisa drug registrations from official data: snapshots, changes, upcoming expirations and competitor views, with source provenance.</p>
+        
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/anvisa-radar-registros" rel="noopener">Open in Apify Store</a>
+      </article>
+      </div>
+    </section>
+    <section>
+      <h2>Jobs and web tools</h2>
+      <div class="grid">
+      <article class="card" id="vagas-ats">
+        <h3><a href="https://apify.com/kman-br/vagas-ats" rel="noopener">Brazil Jobs Scraper: Greenhouse &amp; Lever (Vagas BR)</a></h3>
+        <p>Job openings at Brazilian companies from the public Greenhouse and Lever job board APIs, with normalized city, state and work model, and filters by term, state, city and date.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">Jobs</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/vagas-ats" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="pdf-to-text-markdown">
+        <h3><a href="https://apify.com/kman-br/pdf-to-text-markdown" rel="noopener">PDF to Text &amp; Markdown Converter (PDF para Texto)</a></h3>
+        <p>Extracts the text layer of PDFs from public URLs and returns plain text, simple Markdown (headings by font size) and the page count. No OCR, no browser.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">AI</span><span class="tag">Developer tools</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/pdf-to-text-markdown" rel="noopener">Open in Apify Store</a>
+      </article>
+      <article class="card" id="website-health-checker">
+        <h3><a href="https://apify.com/kman-br/website-health-checker" rel="noopener">Website Health Checker: Broken Links &amp; SEO (Saúde do Site)</a></h3>
+        <p>HTTP-only audit of a site you own: broken internal and external links, robots.txt, sitemap.xml, llms.txt, and per-page title, meta description, canonical, Open Graph, h1, lang and JSON-LD.</p>
+        <p class="cats"><span class="sr">Categories: </span><span class="tag">SEO tools</span><span class="tag">Developer tools</span></p>
+        <p class="price">Pay per event, no subscription.</p>
+        <a class="btn" href="https://apify.com/kman-br/website-health-checker" rel="noopener">Open in Apify Store</a>
+      </article>
+      </div>
+    </section>
+  </main>
+  <footer><p>Kman. Data comes from official public sources. Prices and features are set on each Actor&#x27;s Apify Store page.</p></footer>
+</body>
+</html>
